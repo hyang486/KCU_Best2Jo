@@ -1,8 +1,12 @@
 import 'package:course2ignal/authenticationScreens/login_screen.dart';
+import 'package:course2ignal/controllers/auth_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  Get.put(AuthenticationController());
   runApp(const MyApp());
 }
 
